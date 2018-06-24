@@ -119,16 +119,16 @@ function parallax() {
 /*----------------------------------------------------*/
 /*  On scroll blur header
 ------------------------------------------------------*/
+
+// Change the .scrollTop (increase) to 700 to change fade out/opacity.
    (function() {
       $(window).scroll(function() {
         var oVal;
-        oVal = $(window).scrollTop() / 100;
+        oVal = $(window).scrollTop() / 700;
         return $(".header-overlay").css("opacity", oVal);
         });
 
       }).call(this);
-
-
 
 /*----------------------------------------------------*/
 /*	Fade In/Out Primary Navigation

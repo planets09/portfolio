@@ -1,12 +1,10 @@
 
+
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
   <meta charset="utf-8">
   <title>I code bytes!</title>
   <meta name="description" content="my portfolio">
@@ -14,10 +12,8 @@
 
    <!-- Mobile Specific Metas
    ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <!-- CSS
-    ================================================== -->
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/responsive.css">
@@ -47,16 +43,20 @@
    ================================================== -->
    <header id="home">
 
+    <video id="typingvideo" autoplay loop muted >
+      <source src="images/typing.mp4" type="video/mp4">
+     </video>
+      
       <nav id="m-nav">
 
-         <a class="mobile-btn" href="#m-nav" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#m-nav" title="Show navigation">Show navigation</a>
         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About Me</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
 <!--             <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
@@ -66,7 +66,7 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline wow zoomIn">Hello! I'm <span>Rena Tan</span></h1>
-            <h3 class="wow fadeInUp">I live and work in the Bay Area as a <span>Front-End Developer </span> creating modern and responsive design<br> for <span>Web</span> and <span>Mobile</span>. <br> Let's get started!  Please explore my web page to learn more <a class="smoothscroll" href="#about">about my work</a>.</h3>
+            <h3 class="wow fadeInUp">I live and work in the Bay Area as a <span>Front-End Web Developer </span> creating modern and responsive design<br> for <span>Web</span> and <span>Mobile</span>. <br> Let's get started!  Please explore my web page to learn more <a id='scroll' class="smoothscroll" href="#about">about my work</a>.</h3>
             <hr />
          </div>
       </div>
@@ -82,7 +82,7 @@
    <div id="social">
       <div class="row social-container">
             <ul class="social">
-<!--                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<!--           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
                <li><a href="https://www.linkedin.com/in/rena-tan-73560/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -104,26 +104,29 @@
         <div class="twelve columns bio-inner">
          <div class="six columns bio-left"> 
          <div class="pp-container">
-
+          <div class='pic'>
             <img class="profile-pic wow zoomIn"  src="images/avatar.png" alt="profile" />
+          </div>
+    
               <h2>Rena Tan</h2>
-              <h3>Front-End Developer</h3>              
-            </div> <!-- Profile Picture -->
+              <h3>Front-End Web Developer</h3>              
+            </div> 
          </div>
 
 
          <div class="six columns main-col wow fadeIn">
           <div class="arrow-left"></div>
 
-            <p>Very comfortable and passoniate about adopting ideas and bringing them to life through technology. I also enjoy communicating with creative teams and product managers to improve, as well as trouble-shoot any problems, that would cause production delays.</p> 
-            <p>I am keen to learn new technologies and work with people who value a strong team environment. When I'm not "glued to my screen" working on projects, you can find me hiking near the beach or Muir Woods, partaking in cooking experiments (...yes, the kitchen is still intact!) or binge-watching BBC channel.
+            <p>I enoying learning new technologies and working with people who value a strong team environment. When I'm not "glued to my screen" working on projects, you can find me hiking near the beach or Muir Woods, partaking in cooking experiments (...yes, the kitchen is still intact!) or binge-watching BBC channel.
             </p>
+            <p>I believe in adopting new ideas and bringing them to life through technology. I also enjoy communicating with creative teams and product managers to improve, as well as trouble-shoot any problems, that would cause production delays.</p> 
+
 
           <div class="row">            
             <div class="six columns download">
                 <p>
                   <a href="#contact" class="button"><i class="fa fa-paper-plane"></i>Hire Me</a>
-                  <a href="RTAN_Resume.pdf" class="button" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
+                  <a href="RTan_resume.pdf" class="button" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
                 </p>
             </div> <!-- Download Buttons --> 
       </div>
@@ -165,7 +168,7 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!-- end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -182,7 +185,7 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!-- end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -199,16 +202,16 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!-- end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
                      <a href="#modal-04" title="strict">
-                        <img alt="digital marketing" src="projects/strict300x300.png">
+                        <img alt="digital marketing" src="projects/crimesf300x300.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-                          <h5>Digital Marketing</h5>
+                          <h5>San Francisco Crime App</h5>
                               <p>Web Development</p>
                        </div>
                         </div>
@@ -216,7 +219,7 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!-- end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -233,7 +236,7 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!-- end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -250,7 +253,7 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!--  end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -267,7 +270,7 @@
                      </a>
 
                   </div>
-              </div> <!-- item end -->
+              </div> <!-- end -->
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -347,16 +350,16 @@
 
          <div id="modal-04" class="popup-modal mfp-hide">
 
-          <img class="scale-with-grid" src="projects/strict640x427.png" alt="strict" />
+          <img class="scale-with-grid" src="projects/crimesf640x427.png" alt="strict" />
 
           <div class="description-box">
-            <h4>Digital Marketing</h4>
-            <p>This is a digital marketing website that displays various themes for artists.</p>
+            <h4>San Francisco Crime App</h4>
+            <p>Utilizing API feed from datasf.org, this is a San Francisco Crime App. Users can search for crimes in various neighborhoods.</p>
                <span class="categories"><i class="fa fa-tag"></i>Web Development</span>
           </div>
 
             <div class="link-box">
-               <a href="projects/strictwebpage/index.html" target="_blank" class="button">Live Demo</a>
+               <a href="projects/crimesf/index.html" target="_blank" class="button">Live Demo</a>
              <a class="popup-modal-dismiss button btn-close">Close</a>
             </div>
 
@@ -369,7 +372,7 @@
           <div class="description-box">
             <h4>Google Book Search</h4>
             <p>This application allows the user to search for books by subject matter. The user is then able to click on the book image, which will take them to book site.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, E-Commerce</span>
+               <span class="categories"><i class="fa fa-tag"></i>E-Commerce</span>
           </div>
 
             <div class="link-box">
@@ -458,10 +461,28 @@
               <li class="timeline-event">
                 <label class="timeline-event-icon"></label>
                 <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">Present</p>
+                  <p class="timeline-event-thumbnail">September 2017 - Present</p>
+                  <h3>Facebook</h3>
+                  <h4>Maps Data Analyst</h4>
+                  <p>(TO COME)</p>
+                </div>
+              </li>
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">June 2017 - December 2017</p>
                   <h3>Codify Academy</h3>
-                  <h4>Front-end Developer/Student Mentor</h4>
+                  <h4>Front-end Web Developer | Teaching Assistant</h4>
                   <p>Freelance projects. Developed user-friendly sites, social media links/widgets, and organizing site content. Student mentorship with an emphasis on bug fixes, code reviews and responsive web design.</p>
+                </div>
+              </li>
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">May 2017 - Present</p>
+                  <h3>Front-end Web Developer</h3>
+                  <h4>Consultant | Freelancer</h4>
+                  <p>Freelance developer building web applications using cutting edge web technology, including: HTML5, CSS3, Javascript, AngularJS, Sass, LESS, JQuery, and Bootstrap.</p>
                 </div>
               </li>
               <li class="timeline-event">
@@ -478,17 +499,8 @@
                 <div class="timeline-event-copy">
                   <p class="timeline-event-thumbnail">August 2014 - August 2015</p>
                   <h3>Bank of America</h3>
-                  <h4>Operations/SharePoint Administration,<br>Model Risk Management</h4>
+                  <h4>Operations | SharePoint Administration,<br>Model Risk Management</h4>
                   <p>Managed department SharePoint site for regulatory audits. Organized exam booklets for Federal Reserve Bank and Office of the Comptroller of the Currency. Liaison with key administrators for exam audits.</p>
-                </div>
-              </li>
-                <li class="timeline-event">
-                <label class="timeline-event-icon"></label>
-                <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">March 2012 - August 2014</p>
-                  <h3>Union Bank (subsidiary of The Bank of Tokyo-Mitsubishi UFG, Ltd.)</h3>
-                  <h4>Senior Specialist/SharePoint Administration,<br>Enterprise Wide Risk Reporting and Analysis</h4>
-                  <p>Collected research, designed structural layout and maintained department SharePoint site for internal and external regulatory audits; includes pertinent news information related to Federal Reserve Bank and U.S. Department of Treasury. Managed department database related to software installs for contractors and employees. Includes providing general I.T. support.</p>
                 </div>
               </li>
             </ul>  
@@ -514,17 +526,27 @@
               <li class="timeline-event">
                 <label class="timeline-event-icon"></label>
                 <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">2017</p>
-                  <h3>Codify Academy</h3>
-                  <h4>Front-End Developer</h4>
+                  <p class="timeline-event-thumbnail">Cum Laude Graduate</p>
+                  <h3>San Francisco State University</h3>
+                  <h4>Business Administration - Market Research</h4>
+                  <h4>International Business - Asia/Pacific Rim Studies</h4>
                 </div>
               </li>
               <li class="timeline-event">
                 <label class="timeline-event-icon"></label>
                 <div class="timeline-event-copy">
                   <p class="timeline-event-thumbnail">2017</p>
+                  <h3>Codify Academy</h3>
+                  <h4>Certification: Front-End Developer</h4>
+                  <p>16-week intensive bootcamp for front-end web development. Focus on wire framing/Balsamiq mockups, HTML5, CSS3, JavaScript, Bootstrap, LESS, Sass, AngularJS, JSON, jQuery, Firebase, Postman, Git/Github, APIs, algorithms and responsive design.</p>
+                </div>
+              </li>
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">2017 - 2018</p>
                   <h3>UDEMY</h3>
-                  <h4>AngularJS</h4>
+                  <h4>AngularJS | VueJS</h4>
                 </div>
               </li>
               <li class="timeline-event">
@@ -540,18 +562,11 @@
                 <div class="timeline-event-copy">
                   <p class="timeline-event-thumbnail">2015</p>
                   <h3>Hackbright Academy</h3>
-                  <h4>Introduction to Programming</h4>
+                  <h4>Certification: Introduction to Programming</h4>
+                  <p>Focus on Python, programming logic, code organization, developer tools and data structures.</p>
                 </div>
               </li>
-               <li class="timeline-event">
-                <label class="timeline-event-icon"></label>
-                <div class="timeline-event-copy">
-                  <p class="timeline-event-thumbnail">Cum Laude Graduate</p>
-                  <h3>San Francisco State University</h3>
-                  <h4>Business Administration - Market Research</h4>
-                  <h4>International Business - Asia/Pacific Rim Studies</h4>
-                </div>
-              </li>
+
 
 
             </ul>  
@@ -571,9 +586,9 @@
          </div>
 
          <div class="nine columns main-col">
-
-            <p>JavaScript, HTML5, CSS3, Bootstrap, JSON, API, AngularJS, Balsamiq - responsive web designs that perform across desktop and mobile devices.
-            </p>
+<!-- 
+            <p>JavaScript, HTML5, CSS3, Bootstrap, LESS, Sass, JSON, API, AngularJS, Balsamiq - responsive web designs that perform across desktop and mobile devices.
+            </p> -->
 
         <div class="bars">
 
@@ -791,19 +806,16 @@
 
          <div class="twelve columns">
 
-            <ul class="social-links">
-<!--                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+  <!--           <ul class="social-links">
+
                <li><a href="https://www.linkedin.com/in/rena-tan-73560/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
               <li><a href="https://github.com/planets09" target="_blank"><i class="fa fa-github"></i></a></li>
-               <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-        <!--        <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+
                <li><a href="https://www.skype.com/en/" target="_blank"><i class="fa fa-skype"></i></a></li>
-            </ul>
+            </ul> -->
 
             <ul class="copyright">
-               <li>Rena Tan &copy; Copyright 2017, All Rights Reserved</li>
+               <li>Rena Tan &copy; Copyright 2018, All Rights Reserved</li>
                
             </ul>
 

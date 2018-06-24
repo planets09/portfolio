@@ -128,7 +128,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/bg-min.jpg) no-repeat top center;
+   background: #161415; /*url(../images/bg-min.jpg) no-repeat top center;*/
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -156,7 +156,8 @@ header .banner {
 header .banner-text { width: 100%; }
 header .banner-text h1 {
    font-family: 'Raleway', sans-serif;
-   color: #fff;
+    color: #ed5565;
+    text-shadow: -5px 5px 0px white;
    letter-spacing: 2px;
    margin: 0 auto 40px;
 }
@@ -169,14 +170,15 @@ header .banner-text h1 span {
 
 header .banner-text h3 {
    font-family: 'Raleway', sans-serif;
-   color: #FEFEFE;
+   color: #000000;
    margin: 0 auto;
    width: 70%;
 }
-header .banner-text h3 span,
-header .banner-text h3 a {
-   color: #fff;
-   font-weight: bold;
+header .banner-text h3 span {
+  color: #ed5565;
+  text-shadow: -2px 3px 0px whitesmoke;
+  font-weight: bold;
+
 }
 header .banner-text hr {
    width: 60%;
@@ -185,8 +187,10 @@ header .banner-text hr {
    border-color: rgba(150, 150, 150, .1);
 }
 
+/*remove blur image, change background to white. Next, go to script.js file
+to change oVal = $(window).scrollTop() fade to 700.*/
 .header-overlay {  
-  background: #161415 url(../images/bg-blur.jpg) no-repeat top center;     
+  background: white;    
   background-size:  cover!important;
   position: absolute;
   top: 0;
@@ -199,8 +203,25 @@ header .banner-text hr {
   opacity: 0;
 }
 
+/*Have gif stick to bottom and right side of screen. As window shrinks, the
+video image will still be viewable. Make sure min-h, min-w are set to 100% and
+regular height & width are set to auto. */
+#typingvideo {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  /* object-fit: cover; */
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
 
-
+#scroll{
+  text-shadow: -2px 3px 0px white;
+  color: #ed5565;
+  font-weight: bold;
+}
 
 /* social links */
 
@@ -212,7 +233,7 @@ header .banner-text hr {
    width: 100%;
    height: 80px;
    display: block;
-   z-index: 2;
+   z-index: 3;
 }
 
 .social-container {
@@ -236,7 +257,7 @@ header .banner-text hr {
    padding: 0;
 }
 .social-container .social li a { color: #fff; }
-.social-container .social li a:hover { color: #11ABB0; }
+.social-container .social li a:hover { color: #ed5565; }
 
 /* scrolldown link */
 header .scrolldown a {  
@@ -424,6 +445,10 @@ ul#nav li a:hover {
   z-index: 2;
 }
 
+.pic {
+  object-fit: cover;
+}
+
 #about figure {
   background: rgba(0,0,0, .6);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
@@ -456,7 +481,7 @@ ul#nav li a:hover {
 }
 
 #about .button {
-  background: none repeat scroll 0 0  #11abb0;
+  background: none repeat scroll 0 0  #ed5565;
   display: inline;
   margin-right: 10px;
   margin-top: 6px;
@@ -499,7 +524,7 @@ ul#nav li a:hover {
 
 #about .download .button {
    margin-top: 6px;
-   background:  #11abb0;
+   background:  #ed5565;
 }
 
 #about .download .button:hover {
@@ -1102,7 +1127,7 @@ ul#nav li a:hover {
 }
 
 #call-to-action i {
-  color: #11ABB0;
+  color: #ed5565;
 }
 
 #call-to-action .action {
@@ -1118,6 +1143,11 @@ ul#nav li a:hover {
 #call-to-action h2 a {
    color: inherit;
 }
+
+#call-to-action a.button {
+    background: #ed5565;
+}
+
 #call-to-action p {
    color: #000;
    font-size: 17px;
@@ -1223,7 +1253,7 @@ ul#nav li a:hover {
    margin-bottom: 50px;
  }
 #contact h1:hover {
-   border-color: #fff;
+   border-color: #fff;  
  }
 
 /*#contact .section-title:after {

@@ -2,7 +2,7 @@
 
 
 function initMap(){
-	var myLatLng = { lat: 37.8271784, lng: -122.29130780000003 };
+	var myLatLng = { lat: 37.773972, lng: -122.431297 };
 		map = new google.maps.Map(document.getElementById('newSFMap'), {
 		zoom: 11,
 		center: myLatLng
