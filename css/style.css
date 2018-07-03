@@ -435,6 +435,7 @@ ul#nav li a:hover {
 }
 
 #about .profile-pic {
+  object-fit: cover;
   border: 5px solid #b1b2b4;
   border-radius: 100%;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
@@ -443,10 +444,6 @@ ul#nav li a:hover {
   position: relative;
   width: 100%;
   z-index: 2;
-}
-
-.pic {
-  object-fit: cover;
 }
 
 #about figure {
